@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(to right, #ffffff, #b1a0ef);
+
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    border-radius: 35px;
+    background-color: white;
+    animation: Run 1s 0.2s ease-in-out forwards;
+    position: absolute;
+    left: -1200px;
+}
+
+.partOne {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.partOne h1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.partOne input {
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.137);
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+
+.partTwo {
+    background-color: #935cca;
+    width: 55%;
+    border-radius: 130px 35px 35px 130px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partTwo h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+
+.partTwo p {
+    color: white;
+    font-size: 16px;
+    width: 360px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sign {
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #ffffff96;
+    background-color: #935cca;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+
+
+}
+
+.sign:hover {
+
+    filter: brightness(110%);
+
+}
+
+#forget {
+    padding: 10px 0;
+    text-decoration: none;
+
+}
+
+#forget:hover {
+    text-decoration: underline;
+    color: #868585;
+    ;
+
+}
+
+#forget p {
+    color: #868585;
+}
+
+@keyframes Run {
+
+    0% {
+        opacity: 0%;
+        top: -600px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+
+}
+
